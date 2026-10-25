@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ana Sayfa - One Piece Wiki</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&family=Cinzel:wght@500;700;900&family=Pirata+One&family=Playfair+Display:ital,wght@1,900&family=Righteous&family=Rubik:wght@400;500;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="luffy.png">
+    <link rel="stylesheet" href="style.css">
+    <noscript><style>.acilis-perdesi{display:none}</style></noscript>
+</head>
+<body>
+
+    <!-- Açılış ekranı (oturum başına bir kez) -->
+    <div class="acilis-perdesi" id="acilisPerdesi" aria-hidden="true">
+        <div class="acilis-sayac"><span id="acilisYuzde">0</span>%</div>
+        <!-- Luffy koşarken yol dolar -->
+        <div class="acilis-yol">
+            <div class="acilis-dolgu"></div>
+            <div class="acilis-luffy">
+                <i class="hiz-cizgisi" style="top:22%;width:90px;--d:0s"></i>
+                <i class="hiz-cizgisi" style="top:42%;width:140px;--d:.15s"></i>
+                <i class="hiz-cizgisi" style="top:62%;width:110px;--d:.3s"></i>
+                <i class="hiz-cizgisi" style="top:80%;width:80px;--d:.08s"></i>
+                <b class="toz" style="--d:0s"></b>
+                <b class="toz" style="--d:.23s"></b>
+                <b class="toz" style="--d:.46s"></b>
+                <span class="luffy-golge"></span>
+                <img class="luffy-iz" src="luffy.png" alt="" style="--s:-.14s;--k:-14%;--a:.14">
+                <img class="luffy-iz" src="luffy.png" alt="" style="--s:-.26s;--k:-28%;--a:.07">
+                <img class="luffy-ana" src="luffy.png" alt="">
+            </div>
+        </div>
+        <div class="acilis-yazi">GRAND LINE'A GİRİLİYOR</div>
+    </div>
+
+    <div class="ilerleme-cubugu" aria-hidden="true"></div>
+
+    <!-- Üst Menü -->
+    <nav class="menu">
+        <div class="logo-kismi">
+            <a href="index.html"><img src="logo.png" alt="One Piece Wiki ana sayfa" class="site-logo"></a>
+        </div>
+        <ul class="ana-linkler">
+            <li><a href="karakterler.html">KARAKTERLER</a></li>
+        </ul>
+    </nav>
+
+    <!-- ARKAPLAN DEKORASYON KATMANI -->
+    <div class="arka-dekor-katmani" aria-hidden="true">
+        <div class="par-katman" data-derinlik="0.012"><div class="kayan-bant-kapsayici">
+            <div class="kayan-bant-yazi">
+                GRAND LINE &nbsp;&bull;&nbsp; NEW WORLD &nbsp;&bull;&nbsp; YONKO &nbsp;&bull;&nbsp; LAUGH TALE &nbsp;&bull;&nbsp; GRAND LINE &nbsp;&bull;&nbsp; NEW WORLD &nbsp;&bull;&nbsp; YONKO &nbsp;&bull;&nbsp; LAUGH TALE &nbsp;&bull;&nbsp; GRAND LINE &nbsp;&bull;&nbsp; NEW WORLD &nbsp;&bull;&nbsp; YONKO &nbsp;&bull;&nbsp; LAUGH TALE &nbsp;&bull;&nbsp; GRAND LINE &nbsp;&bull;&nbsp; NEW WORLD &nbsp;&bull;&nbsp; YONKO &nbsp;&bull;&nbsp; LAUGH TALE &nbsp;&bull;&nbsp; GRAND LINE &nbsp;&bull;&nbsp; NEW WORLD &nbsp;&bull;&nbsp; YONKO &nbsp;&bull;&nbsp; LAUGH TALE &nbsp;&bull;&nbsp; GRAND LINE &nbsp;&bull;&nbsp; NEW WORLD &nbsp;&bull;&nbsp; YONKO &nbsp;&bull;&nbsp; LAUGH TALE &nbsp;&bull;&nbsp; GRAND LINE &nbsp;&bull;&nbsp; NEW WORLD &nbsp;&bull;&nbsp; YONKO &nbsp;&bull;&nbsp; LAUGH TALE &nbsp;&bull;&nbsp; GRAND LINE &nbsp;&bull;&nbsp; NEW WORLD &nbsp;&bull;&nbsp; YONKO &nbsp;&bull;&nbsp; LAUGH TALE &nbsp;&bull;&nbsp;
+            </div>
+        </div></div>
+
+        <div class="imlec-isigi"></div>
+        <svg class="dalgalar dalga-arka" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 70 Q360 30 720 70 T1440 70 T2160 70 T2880 70 V120 H0Z"/></svg>
+        <svg class="dalgalar dalga-on" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 Q180 20 360 60 T720 60 T1080 60 T1440 60 T1800 60 T2160 60 T2520 60 T2880 60 V120 H0Z"/></svg>
+
+                <!-- Korsan temalı çizimler (tek tek <use> ile çağrılır) -->
+        <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+            <symbol id="dumen" viewBox="0 0 100 100"><circle cx="50" cy="50" r="30"/><circle cx="50" cy="50" r="9"/><circle cx="50" cy="50" r="40"/><g><line x1="50" y1="2" x2="50" y2="98" stroke-width="5"/><line x1="50" y1="2" x2="50" y2="98" stroke-width="5" transform="rotate(45 50 50)"/><line x1="50" y1="2" x2="50" y2="98" stroke-width="5" transform="rotate(90 50 50)"/><line x1="50" y1="2" x2="50" y2="98" stroke-width="5" transform="rotate(135 50 50)"/></g></symbol>
+            <symbol id="pusula" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46"/><circle cx="50" cy="50" r="38"/><path d="M50 6 L58 42 L94 50 L58 58 L50 94 L42 58 L6 50 L42 42Z"/><path d="M50 22 L54 46 L78 50 L54 54 L50 78 L46 54 L22 50 L46 46Z" transform="rotate(45 50 50)"/><g stroke-width="2"><line x1="50" y1="4" x2="50" y2="12"/><line x1="50" y1="88" x2="50" y2="96"/><line x1="4" y1="50" x2="12" y2="50"/><line x1="88" y1="50" x2="96" y2="50"/></g></symbol>
+            <symbol id="cipa" viewBox="0 0 100 100"><circle cx="50" cy="14" r="7"/><line x1="50" y1="21" x2="50" y2="88"/><line x1="33" y1="34" x2="67" y2="34"/><path d="M16 62 Q20 92 50 92 Q80 92 84 62"/><path d="M9 70 L16 60 L26 67"/><path d="M91 70 L84 60 L74 67"/></symbol>
+            <symbol id="kuru" viewBox="0 0 100 100"><path d="M50 8 C25 8 14 26 18 46 C19 54 25 58 30 60 L30 72 L70 72 L70 60 C75 58 81 54 82 46 C86 26 75 8 50 8Z"/><circle cx="36" cy="42" r="8" fill="currentColor"/><circle cx="64" cy="42" r="8" fill="currentColor"/><path d="M50 52 L45 63 L55 63Z" fill="currentColor"/><path d="M40 72 V82 M50 72 V82 M60 72 V82"/><path d="M10 80 L90 98 M90 80 L10 98"/></symbol>
+            <symbol id="hasir" viewBox="0 -16 100 116"><path d="M50 14 C27 14 16 30 19 47 C20 54 25 58 30 60 L30 72 L70 72 L70 60 C75 58 80 54 81 47 C84 30 73 14 50 14Z"/><circle cx="37" cy="45" r="7" fill="currentColor"/><circle cx="63" cy="45" r="7" fill="currentColor"/><path d="M50 54 L46 63 L54 63Z" fill="currentColor"/><path d="M41 72 V80 M50 72 V80 M59 72 V80"/><path d="M10 80 L90 98 M90 80 L10 98"/><ellipse cx="50" cy="16" rx="47" ry="9"/><path d="M27 13 Q28 -12 50 -12 Q72 -12 73 13"/><path d="M28 5 Q50 11 72 5" stroke-width="5"/></symbol>
+            <symbol id="gemi" viewBox="0 0 200 160"><path d="M16 108 L184 108 Q168 142 136 144 L64 144 Q32 142 16 108Z" fill="currentColor"/><line x1="100" y1="16" x2="100" y2="108" stroke-width="4"/><path d="M104 26 Q156 54 104 92Z" fill="currentColor" fill-opacity=".55"/><path d="M96 34 Q54 58 96 88Z" fill="currentColor" fill-opacity=".55"/><path d="M100 14 L126 21 L100 28Z" fill="currentColor"/><line x1="184" y1="104" x2="204" y2="90" stroke-width="4"/></symbol>
+            <symbol id="meyve" viewBox="0 0 100 100"><path d="M50 22 C20 22 14 52 24 74 C32 92 68 92 76 74 C86 52 80 22 50 22Z"/><path d="M50 22 Q50 10 60 5"/><path d="M50 58 C55 58 57 63 52 66 C45 70 39 62 44 55 C51 47 63 54 61 65 C59 77 42 79 36 66"/></symbol>
+            <symbol id="hazine-harita" viewBox="0 0 300 120"><path d="M8 100 C60 20 120 112 170 52 S258 22 276 66" stroke-dasharray="3 10" stroke-width="4"/><path d="M262 52 L290 80 M290 52 L262 80" stroke-width="9"/></symbol>
+            <symbol id="marti" viewBox="0 0 40 14"><path d="M1 11 Q11 -3 20 9 Q29 -3 39 11"/></symbol>
+        </defs></svg>
+
+        <div class="obje-maske" id="objeMaske">
+        <!-- Uzak katman -->
+        <div class="par-katman" data-derinlik="0.02">
+            <div class="ob donen" style="top:7.76%;left:6.06%;width:20vw;color:#f1c40f;--o:.09"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#dumen"/></svg></div>
+            <div class="ob sallan" style="top:64.18%;left:71.25%;width:26vw;color:#00d2d3;--o:.09"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#pusula"/></svg></div>
+            <div class="ob sallan" style="top:38.51%;left:75.74%;width:12.5vw;color:#e74c3c;--o:.09"><svg viewBox="0 -16 100 116" aria-hidden="true"><use href="#hasir"/></svg></div>
+            <div class="ob yuzen" style="top:54.79%;left:35.63%;width:30vw;color:#f39c12;--o:.1"><svg viewBox="0 0 300 120" aria-hidden="true"><use href="#hazine-harita"/></svg></div>
+        </div>
+
+        <!-- Orta katman -->
+        <div class="par-katman" data-derinlik="0.04">
+            <div class="ob sallan" style="top:69.16%;left:9.47%;width:9vw;color:#2ecc71;--o:.14"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#cipa"/></svg></div>
+            <div class="ob yuzen" style="top:49.04%;left:54.79%;width:8vw;color:#9b59b6;--o:.16"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#meyve"/></svg></div>
+            <div class="ob yuzen gecikme" style="top:70.11%;left:45.21%;width:6vw;color:#2ecc71;--o:.14"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#meyve"/></svg></div>
+            <div class="ilan-golge" style="top:9.77%;left:45.21%;--r:-7deg;"><b>WANTED</b><i></i><span>DEAD OR ALIVE</span></div>
+            <div class="ilan-golge" style="top:39.46%;left:65.27%;--r:6deg;"><b>WANTED</b><i></i><span>DEAD OR ALIVE</span></div>
+            <div class="ob gemi-suzul" style="top:73.95%;left:17.25%;width:15vw;color:#7fdbff;--o:.16"><svg viewBox="0 0 200 160" aria-hidden="true"><use href="#gemi"/></svg></div>
+        </div>
+
+        <!-- Yakın katman -->
+        <div class="par-katman" data-derinlik="0.075">
+            <div class="ob marti-uc" style="top:17.43%;left:32.64%;width:3.4vw;color:#fff;--o:.35"><svg viewBox="0 0 40 14" aria-hidden="true"><use href="#marti"/></svg></div>
+            <div class="ob marti-uc gecikme" style="top:22.22%;left:38.03%;width:2.4vw;color:#fff;--o:.3"><svg viewBox="0 0 40 14" aria-hidden="true"><use href="#marti"/></svg></div>
+            <div class="ob marti-uc gecikme2" style="top:12.64%;left:56.88%;width:2.8vw;color:#fff;--o:.3"><svg viewBox="0 0 40 14" aria-hidden="true"><use href="#marti"/></svg></div>
+            <span class="berry-para" style="top:72.03%;left:24.86%;--g:0s;">฿</span>
+            <span class="berry-para" style="top:68.97%;left:68.98%;--g:1.4s;">฿</span>
+            <span class="berry-para" style="top:56.7%;left:89.51%;--g:2.6s;">฿</span>
+            <div class="ob sallan" style="top:55.17%;left:60.36%;width:3vw;color:#e74c3c;--o:.3"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#kuru"/></svg></div>
+            <div class="ob sallan gecikme" style="top:79.31%;left:29.29%;width:2.4vw;color:#f1c40f;--o:.3"><svg viewBox="0 0 100 100" aria-hidden="true"><use href="#kuru"/></svg></div>
+        </div>
+        </div>
+    </div>
+
+    <main class="asimetrik-kaydirma">
+
+        <!-- 1. GİRİŞ -->
+        <section class="asimetrik-bolum hero-bolumu gizle-tetikleyici">
+            <div class="dev-transparan-yazi dikey-japonca neon-mavi" lang="ja" aria-hidden="true">ワンピース</div>
+
+            <aside class="wanted-poster" id="wantedPoster" aria-label="Monkey D. Luffy eşkâl ilanı">
+                <div class="wanted-resim">
+                    <img src="wanted.jpg" alt="Monkey D. Luffy eşkâl ilanı" width="575" height="836">
+                    <!-- Resimdeki ödül yazısının üstünü kapatıp canlı sayacı koyar -->
+                    <div class="wanted-odul-yama"><span class="berry">฿</span><span id="odulSayac" data-hedef="3000000000">3.000.000.000</span></div>
+                </div>
+            </aside>
+            <div class="kaydir-ipucu" aria-hidden="true"><span>KAYDIR</span><i></i></div>
+
+            <div class="hero-icerik">
+                <div class="yazi-maske"><h1 class="cesur-baslik anim-yazi">ONE PIECE</h1></div>
+                <div class="yazi-maske"><h2 class="cesur-baslik renkli-vurgu anim-yazi" style="margin-left: 10%;">NEDİR?</h2></div>
+
+                <div class="hero-alt-kisim anim-yukari">
+                    <p class="asimetrik-metin sag-metin">
+                        1997'de Eiichiro Oda'nın yarattığı One Piece, özgürlük tutkunu genç korsan Monkey D. Luffy ve Hasır Şapka Korsanları'nın serüvenini anlatır. Sıradan bir hikâye değil; milyonları peşinden sürükleyen bir kültür fenomeni.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. ŞEYTAN MEYVELERİ -->
+        <section class="asimetrik-bolum gizle-tetikleyici">
+            <div class="dev-transparan-yazi japonca-yazi neon-yesil" lang="ja" aria-hidden="true" style="right: -2%; top: 10%;">悪魔の実</div>
+
+            <div class="icerik-kutusu sola-yasli">
+                <div class="etiket anim-yukari">GÜÇ SİSTEMİ 01</div>
+                <div class="yazi-maske"><h2 class="cesur-alt-baslik yesil-vurgu anim-yazi">ŞEYTAN MEYVELERİ</h2></div>
+                <div class="yazi-maske"><h2 class="cesur-alt-baslik anim-yazi" style="margin-left: 15%;">(AKUMA NO MI)</h2></div>
+
+                <p class="asimetrik-metin anim-yukari" style="margin-left: 20%; margin-top: 30px;">
+                    Dünyanın en gizemli güç kaynaklarından biri. Yiyene doğaüstü yetenekler verir ve <strong>Paramecia</strong>, <strong>Zoan</strong>, <strong>Logia</strong> olarak üçe ayrılır. Bedeli ağırdır: denizin laneti yüzünden kullanıcı sonsuza dek yüzme yeteneğini kaybeder.
+                </p>
+            </div>
+        </section>
+
+        <!-- 3. HAKİ -->
+        <section class="asimetrik-bolum gizle-tetikleyici">
+            <div class="dev-transparan-yazi japonca-yazi neon-kirmizi" lang="ja" aria-hidden="true" style="left: -2%; top: 20%;">覇気</div>
+
+            <div class="icerik-kutusu saga-yasli">
+                <div class="etiket anim-yukari">GÜÇ SİSTEMİ 02</div>
+                <div class="yazi-maske"><h2 class="cesur-alt-baslik kirmizi-vurgu anim-yazi">HAKİ: İRADENİN</h2></div>
+                <div class="yazi-maske"><h2 class="cesur-alt-baslik anim-yazi">SİLAHI</h2></div>
+
+                <p class="asimetrik-metin anim-yukari" style="margin-right: 15%; margin-top: 30px;">
+                    Her canlının içinde uyuyan ruhsal enerji. <strong>Gözlem</strong> tehlikeyi önceden sezdirir, <strong>Silahlanma</strong> saldırıyı ve savunmayı çelikleştirir. <strong>Fatih Hakisi</strong> ise milyonda bir kişide bulunur. Şeytan Meyvesi olmadan da zirveye çıkmanın yoludur.
+                </p>
+            </div>
+        </section>
+
+        <!-- 4. MANGA -->
+        <section class="asimetrik-bolum gizle-tetikleyici manga-bolum">
+            <div class="hiz-cizgileri" aria-hidden="true"></div>
+            <div class="dev-transparan-yazi neon-beyaz" aria-hidden="true" style="top: auto; bottom: 4%; left: auto; right: 3%; font-size: 10vw;">MANGA</div>
+
+            <!-- Manga görseli (fareye göre eğilir, üzerinde ışık gezer) -->
+            <figure class="manga-gorsel egimli">
+                <img src="manga.webp" alt="One Piece manga kapağı" loading="lazy">
+            </figure>
+
+            <div class="icerik-kutusu sola-yasli" style="margin-top: 100px;">
+                <div class="etiket anim-yukari">KÜRESEL FENOMEN</div>
+                <div class="yazi-maske"><h2 class="cesur-alt-baslik beyaz-vurgu anim-yazi">MANGA EFSANESİ</h2></div>
+
+                <p class="asimetrik-metin anim-yukari" style="margin-left: 30%;">
+                    Dünya genelinde 500 milyonun üzerinde kopya satarak "en çok satan manga serisi" rekorunu elinde tutuyor ve Guinness Dünya Rekorları'na girdi.
+                    <small class="kaynak-notu">Kaynak: Guinness Dünya Rekorları (2022).</small>
+                </p>
+            </div>
+        </section>
+
+        <!-- 5. FİLM & FİGÜR -->
+        <section class="asimetrik-bolum gizle-tetikleyici ciftli-asimetri">
+            <div class="icerik-kutusu yarim-kutu anim-yukari">
+                <div class="etiket">SİNEMA EVRENİ</div>
+                <h3 class="kucuk-cesur kirmizi-vurgu">GİŞE REKORTMENİ FİLMLER</h3>
+                <p class="asimetrik-metin">Özellikle "One Piece Film: Red", milyarlarca yen hasılat yaparak küresel gişeleri altüst etmiş, müzikal ile aksiyonu birleştiren eşsiz bir sinematik deneyim sunmuştur.</p>
+            </div>
+
+            <div class="icerik-kutusu yarim-kutu anim-yukari" style="margin-top: 150px; margin-left: auto;">
+                <div class="etiket">KOLEKSİYON DÜNYASI</div>
+                <h3 class="kucuk-cesur altin-vurgu">PREMİUM FİGÜRLER</h3>
+                <p class="asimetrik-metin">P.O.P ve devasa reçine (resin) heykeller... One Piece, sıradan bir oyuncak pazarı değil; ince işçiliğin zirvesinde devasa bir sanat endüstrisidir.</p>
+            </div>
+        </section>
+
+        <!-- 6. KART OYUNU -->
+        <section class="asimetrik-bolum gizle-tetikleyici">
+            <div class="dev-transparan-yazi neon-mor" aria-hidden="true" style="top: auto; bottom: 10%; left: 10%; font-size: 7vw;">CARD GAME</div>
+            <div class="icerik-kutusu merkeze-yasli">
+                <div class="etiket anim-yukari">YENİ NESİL REKABET</div>
+                <div class="yazi-maske"><h2 class="cesur-alt-baslik mor-vurgu anim-yazi">KART OYUNU (TCG)</h2></div>
+                <p class="asimetrik-metin anim-yukari" style="text-align: center; margin: 30px auto 0 auto;">
+                    Çıktığı günden beri büyük rakiplere meydan okuyan resmi kart oyunu. Küresel turnuvalar ve nadir kartlarla markanın en rekabetçi alanı.
+                </p>
+
+                <!-- Kart yelpazesi (sırayla uçarak gelir, üzerine gelince öne çıkar) -->
+                <div class="kart-yelpaze">
+                    <figure class="kart-gorsel egimli"><img src="kart1.jpg" alt="One Piece kart oyunu kartı 1" loading="lazy"></figure>
+                    <figure class="kart-gorsel egimli"><img src="kart2.jpg" alt="One Piece kart oyunu kartı 2" loading="lazy"></figure>
+                    <figure class="kart-gorsel egimli"><img src="kart3.webp" alt="One Piece kart oyunu kartı 3" loading="lazy"></figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. DÜNYANIN YAPISI (yatay kaydırma) -->
+        <section class="harita" id="harita" aria-label="One Piece dünyasının yapısı">
+            <div class="harita-sabit">
+                <div class="harita-ust etiket">DÜNYANIN YAPISI</div>
+                <div class="harita-seridi" id="haritaSeridi">
+
+                    <article class="harita-panel" data-hayalet="GRAND LINE" style="--renk:#f1c40f">
+                        <div class="etiket">BÜYÜK RESİM</div>
+                        <h2 class="harita-baslik">İki çizgi,<br>dört deniz</h2>
+                        <p class="asimetrik-metin">Dünya, birbirini dik kesen iki dev çizgiyle bölünür: gezegeni dikey saran Kızıl Hat ve ona dik uzanan Grand Line. Bu kesişim denizi dört parçaya ayırır. Yolculuğa başlamak için kaydırmaya devam et.</p>
+                    </article>
+
+                    <article class="harita-panel" data-hayalet="RED LINE" style="--renk:#e74c3c">
+                        <div class="etiket">KIZIL HAT</div>
+                        <h2 class="harita-baslik">Dünyanın<br>omurgası</h2>
+                        <p class="asimetrik-metin">Dünyayı baştan başa saran dev bir kıta. Tepesinde Mary Geoise bulunur: Dünya Hükümeti'nin kalbi ve Celestial Dragon'ların yurdu.</p>
+                        <ul class="ada-listesi"><li>Mary Geoise</li></ul>
+                    </article>
+
+                    <article class="harita-panel" data-hayalet="FOUR BLUES" style="--renk:#00d2d3">
+                        <div class="etiket">DÖRT DENİZ</div>
+                        <h2 class="harita-baslik">East, West,<br>North, South</h2>
+                        <p class="asimetrik-metin">Grand Line'ın dışında kalan dört deniz. Luffy, East Blue'daki Dawn Adası'nın Foosha Köyü'nden yola çıkar. Dört denizden gelen kanallar Reverse Mountain'ın zirvesinde birleşir ve Grand Line'a akar.</p>
+                        <ul class="ada-listesi"><li>Dawn Adası (Foosha Köyü)</li><li>Reverse Mountain</li></ul>
+                    </article>
+
+                    <article class="harita-panel" data-hayalet="PARADISE" style="--renk:#2ecc71">
+                        <div class="etiket">GRAND LINE · İLK YARI</div>
+                        <h2 class="harita-baslik">Paradise</h2>
+                        <p class="asimetrik-metin">Pusulalar burada işe yaramaz, çünkü her adanın manyetik alanı farklıdır. Yolcular Log Pose ile adadan adaya sıçrar. Rotanın iki yanında rüzgârsız Calm Belt uzanır ve Deniz Kralları yolu kapatır.</p>
+                        <ul class="ada-listesi"><li>Alabasta (çöl krallığı)</li><li>Water 7 (su şehri)</li><li>Marineford (Deniz Kuvvetleri karargâhı)</li></ul>
+                    </article>
+
+                    <article class="harita-panel" data-hayalet="SABAODY" style="--renk:#f39c12">
+                        <div class="etiket">GEÇİT</div>
+                        <h2 class="harita-baslik">Kızıl Hat'ın<br>altından</h2>
+                        <p class="asimetrik-metin">Yeni Dünya'ya geçmek için gemiler Sabaody'de kaplanır ve yaklaşık 10.000 metre derindeki Balık Adamlar Adası'na dalar. Oradan yükselen yol, Kızıl Hat'ın ötesine çıkar.</p>
+                        <ul class="ada-listesi"><li>Sabaody Takımadaları</li><li>Balık Adamlar Adası</li></ul>
+                    </article>
+
+                    <article class="harita-panel" data-hayalet="NEW WORLD" style="--renk:#9b59b6">
+                        <div class="etiket">GRAND LINE · İKİNCİ YARI</div>
+                        <h2 class="harita-baslik">Yeni Dünya<br>&amp; Laugh Tale</h2>
+                        <p class="asimetrik-metin">Hava, deniz ve kurallar burada tahmin edilemez; Yonko'lar bu denizde hüküm sürer. Yolun sonunda efsanevi hazinenin saklandığı Laugh Tale bekler. Oraya ancak Poneglyph taşlarının izi sürülerek ulaşılır.</p>
+                        <ul class="ada-listesi"><li>Wano</li><li>Whole Cake Adası</li><li>Laugh Tale</li></ul>
+                    </article>
+
+                </div>
+                <div class="harita-ilerleme" aria-hidden="true"><i></i></div>
+            </div>
+        </section>
+
+        <!-- 8. İŞ BİRLİKLERİ -->
+        <section class="asimetrik-bolum gizle-tetikleyici collab-bolumu">
+            <div class="dev-transparan-yazi neon-mavi" aria-hidden="true" style="top: 1%; left: auto; right: 3%; font-size: 8vw;">COLLAB</div>
+            <div class="icerik-kutusu sola-yasli" style="max-width: 1100px;">
+                <div class="etiket anim-yukari">MARKA ORTAKLIKLARI</div>
+                <div class="yazi-maske"><h2 class="cesur-alt-baslik anim-yazi">İŞ BİRLİKLERİ</h2></div>
+                <p class="asimetrik-metin anim-yukari">One Piece sadece bir manga değil, spor ayakkabıdan tema parkına, modadan diziye uzanan dev bir marka ağı. Üzerine gelip detayını gör.</p>
+                <div class="anim-yukari">
+                    <ul class="collab-liste">
+                        <li tabindex="0" style="--renk:#f1c40f"><span class="collab-isim">Nike</span><span class="collab-tur">AYAKKABI &amp; GİYİM</span><span class="collab-yil">2026</span><p class="collab-aciklama">Gomu Gomu, Ope Ope ve Mera Mera Şeytan Meyvelerinden esinlenen üç Air Max Plus modeli; forma, şapka ve tişörtler de koleksiyona eşlik etti. Eylül 2026'da satışa çıktı.</p></li>
+                        <li tabindex="0" style="--renk:#2ecc71"><span class="collab-isim">Timberland</span><span class="collab-tur">BOT</span><span class="collab-yil">2026</span><p class="collab-aciklama">Markanın One Piece ile ilk ortak çalışması: ikonik 6 inç bot, seriden yeni çizilmiş illüstrasyonlarla buluştu.</p></li>
+                        <li tabindex="0" style="--renk:#00d2d3"><span class="collab-isim">Crocs</span><span class="collab-tur">TERLİK</span><span class="collab-yil">2026</span><p class="collab-aciklama">Luffy, Zoro, Chopper ve Thousand Sunny temalı dört terlik ile Jibbitz süsleri. Bir önceki yıl Luffy'nin Gear 5 hali de özel bir modele ilham olmuştu.</p></li>
+                        <li tabindex="0" style="--renk:#e74c3c"><span class="collab-isim">Netflix</span><span class="collab-tur">DİZİ</span><span class="collab-yil">2023</span><p class="collab-aciklama">Shueisha ve Tomorrow Studios ortaklığıyla çekilen live-action dizi 31 Ağustos 2023'te yayınlandı, ikinci sezonu Mart 2026'da izleyiciyle buluştu.</p></li>
+                        <li tabindex="0" style="--renk:#f39c12"><span class="collab-isim">Uniqlo UT</span><span class="collab-tur">TİŞÖRT</span><span class="collab-yil">YILLARCA</span><p class="collab-aciklama">Düzenli aralıklarla yeni One Piece tişört koleksiyonları çıkaran marka, dizinin 25. yıl dönümü için de özel bir seri hazırladı.</p></li>
+                        <li tabindex="0" style="--renk:#9b59b6"><span class="collab-isim">Puma</span><span class="collab-tur">SPOR GİYİM</span><span class="collab-yil">2024</span><p class="collab-aciklama">Puma'nın sokak ve spor silüetlerini Luffy'nin macera ruhuyla birleştiren ayakkabı ve giyim koleksiyonu.</p></li>
+                        <li tabindex="0" style="--renk:#f1c40f"><span class="collab-isim">Universal Studios Japan</span><span class="collab-tur">TEMA PARKI</span><span class="collab-yil">2007'DEN BERİ</span><p class="collab-aciklama">Osaka'daki parkta 2007'den beri her yıl yinelenen One Piece Premier Show ve sınırlı süreli yaz etkinlikleri.</p></li>
+                        <li tabindex="0" style="--renk:#ffffff"><span class="collab-isim">Gucci</span><span class="collab-tur">MODA</span><span class="collab-yil">2020</span><p class="collab-aciklama">Eiichiro Oda, markanın 2020 sonbahar-kış koleksiyonundan parçalar giyen Luffy ve Zoro'yu bizzat çizdi.</p></li>
+                    </ul>
+                </div>
+                <small class="kaynak-notu">Kaynaklar: Sole Retriever, Complex, Netflix ve Universal Studios Japan duyuruları. Ekim 2026 itibarıyla.</small>
+            </div>
+        </section>
+
+        <!-- 9. YÖNLENDİRME -->
+        <section class="asimetrik-bolum gizle-tetikleyici cta-bolumu">
+            <div class="icerik-kutusu merkeze-yasli">
+                <div class="yazi-maske"><h2 class="cesur-alt-baslik altin-vurgu anim-yazi">HAZIR MISIN?</h2></div>
+                <p class="asimetrik-metin anim-yukari" style="text-align: center; margin: 30px auto 0 auto;">
+                    Hasır Şapka Korsanları'nın ve düşmanlarının dosyaları seni bekliyor.
+                </p>
+                <div class="anim-yukari">
+                    <a href="karakterler.html" class="cta-buton">Karakterleri keşfet</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

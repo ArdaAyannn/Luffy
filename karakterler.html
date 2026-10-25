@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Karakterler - One Piece Wiki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="wiki-sayfa">
+
+    <nav class="menu">
+        <div class="logo-kismi">
+            <a href="index.html"><img src="logo.png" alt="Site Logosu" class="site-logo"></a>
+        </div>
+        <ul class="ana-linkler">
+            <li><a href="karakterler.html">KARAKTERLER</a></li>
+        </ul>
+    </nav>
+
+    <div class="wiki-sayfasi">
+        
+        <div class="wiki-baslik">
+            <h1>KARAKTERLER</h1>
+            <p>10 karakter bulunuyor</p>
+        </div>
+
+        <div class="wiki-filtre-alani">
+            <input type="text" id="aramaInput" placeholder="Karakter adı..." class="arama-kutusu">
+            
+            <div class="filtre-butonlari">
+                <div class="ozel-dropdown" id="ekipDropdown">
+                    <div class="dropdown-secili">Tüm Ekipler</div>
+                    <ul class="dropdown-liste">
+                        <li data-value="tum">Tüm Ekipler</li>
+                        <li data-value="hasir">Hasır Şapka Korsanları</li>
+                    </ul>
+                </div>
+                <div class="ozel-dropdown" id="isimDropdown">
+                    <div class="dropdown-secili">Ad A-Z</div>
+                    <ul class="dropdown-liste">
+                        <li data-value="az">Ad A-Z</li>
+                        <li data-value="za">Ad Z-A</li>
+                    </ul>
+                </div>
+                <div class="ozel-dropdown" id="odulDropdown">
+                    <div class="dropdown-secili">Ödül Sıralaması Seç...</div>
+                    <ul class="dropdown-liste">
+                        <li data-value="artan">Ödül Miktarına Göre Artan</li>
+                        <li data-value="azalan">Ödül Miktarına Göre Azalan</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="wiki-kart-grid" id="kartGrid">
+
+            <!-- data-link özellikleri her karta özel olarak eklendi -->
+            <div class="wiki-kart" data-odul="3000000000" data-isim="Monkey D. Luffy" data-link="luffy.html">
+                <div class="kart-ust-etiket">KAPTAN</div>
+                <img src="luffy.jpg.avif" alt="Monkey D. Luffy">
+                <div class="kart-bilgi">
+                    <h3>Monkey D. Luffy</h3>
+                    <p class="kart-tayfa">Hasır Şapka Korsanları</p>
+                    <p class="kart-odul">3.0B <span>฿</span></p>
+                </div>
+            </div>
+
+            <div class="wiki-kart" data-odul="1110000000" data-isim="Roronoa Zoro" data-link="zoro.html">
+                <div class="kart-ust-etiket">KILIÇ USTASI</div>
+                <img src="zoro.jpg.avif" alt="Roronoa Zoro">
+                <div class="kart-bilgi">
+                    <h3>Roronoa Zoro</h3>
+                    <p class="kart-tayfa">Hasır Şapka Korsanları</p>
+                    <p class="kart-odul">1.11B <span>฿</span></p>
+                </div>
+            </div>
+
+            <div class="wiki-kart" data-odul="366000000" data-isim="Nami" data-link="nami.html">
+                <div class="kart-ust-etiket">ROTACI</div>
+                <img src="nami.jpg.avif" alt="Nami">
+                <div class="kart-bilgi">
+                    <h3>Nami</h3>
+                    <p class="kart-tayfa">Hasır Şapka Korsanları</p>
+                    <p class="kart-odul">366M <span>฿</span></p>
+                </div>
+            </div>
+
+            <div class="wiki-kart" data-odul="500000000" data-isim="Usopp" data-link="usopp.html">
+                <div class="kart-ust-etiket">NİŞANCI</div>
+                <img src="usopp.jpg.avif" alt="Usopp">
+                <div class="kart-bilgi">
+                    <h3>Usopp</h3>
+                    <p class="kart-tayfa">Hasır Şapka Korsanları</p>
+                    <p class="kart-odul">500M <span>฿</span></p>
+                </div>
+            </div>
+
+            <div class="wiki-kart" data-odul="1030000000" data-isim="Sanji Vinsmoke" data-link="sanji.html">
+                <div class="kart-ust-etiket">AŞÇI</div>
+                <img src="sanji.jpg.avif" alt="Sanji Vinsmoke">
+                <div class="kart-bilgi">
+                    <h3>Sanji Vinsmoke</h3>
+                    <p class="kart-tayfa">Hasır Şapka Korsanları</p>
+                    <p class="kart-odul">1.03B <span>฿</span></p>
+                </div>
+            </div>
+
+            <div class="wiki-kart" data-odul="1000" data-isim="Tony Tony Chopper" data-link="chopper.html">
+                <div class="kart-ust-etiket">DOKTOR</div>
+                <img src="chopper.jpg.avif" alt="Tony Tony Chopper">
+                <div class="kart-bilgi">
+                    <h3>Tony Tony Chopper</h3>
+                    <p class="kart-tayfa">Hasır Şapka Korsanları</p>
+                    <p class="kart-odul">1.000 <span>฿</span></p>
+                </div>
+            </div>
+
+            <div class="wiki-kart" data-odul="930000000" data-isim="Nico Robin" data-link="robin.html">
+                <div class="kart-ust-etiket">ARKEOLOG</div>
+                <img src="robin.jpg.avif" alt="Nico Robin">
+                <div class="kart-bilgi">
+                    <h3>Nico Robin</h3>
+                    <p class="kart-tayfa">Hasır Şapka Korsanları</p>
+                    <p class="kart-odul">930M <span>฿</span></p>
+                </div>
+            </div>
+
+            <div class="wiki-kart" data-odul="394000000" data-isim="Franky" data-link="franky.html">
+                <div class="kart-ust-etiket">GEMİ MÜHENDİSİ</div>
+                <img src="franky.jpg.avif" alt="Franky">
+                <div class="kart-bilgi">
+                    <h3>Franky</h3>
+                    <p class="kart-tayfa">Hasır Şapka Korsanları</p>
+                    <p class="kart-odul">394M <span>฿</span></p>
+                </div>
+            </div>
+
+            <div class="wiki-kart" data-odul="383000000" data-isim="Brook" data-link="brook.html">
+                <div class="kart-ust-etiket">MÜZİSYEN</div>
+                <img src="brook.jpg.avif" alt="Brook">
+                <div class="kart-bilgi">
+                    <h3>Brook</h3>
+                    <p class="kart-tayfa">Hasır Şapka Korsanları</p>
+                    <p class="kart-odul">383M <span>฿</span></p>
+                </div>
+            </div>
+
+            <div class="wiki-kart" data-odul="1100000000" data-isim="Jinbe" data-link="jinbe.html">
+                <div class="kart-ust-etiket">DÜMENCİ</div>
+                <img src="jinbe.jpg.avif" alt="Jinbe">
+                <div class="kart-bilgi">
+                    <h3>Jinbe</h3>
+                    <p class="kart-tayfa">Hasır Şapka Korsanları</p>
+                    <p class="kart-odul">1.1B <span>฿</span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
